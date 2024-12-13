@@ -11,7 +11,7 @@ jobs:
         - name: Check out code
           uses: actions/checkout@v2 # This is actually a repo
         - name: Send a discord message
-          uses: discord-actions/message@v2
+          uses: discord-actions/message@v2 # This is also a rep
           with: 
                 # A Discord webhook URL
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK_URL }}
