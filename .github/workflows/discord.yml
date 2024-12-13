@@ -1,0 +1,23 @@
+name: My panda ci
+on: 
+  push:
+    branches: [main] # This will run everytime you push to the 'main' branch
+
+jobs:
+  builds:
+      runs-on: ubuntu-latest
+      name: my build
+      steps:
+        - name: Check out code
+          uses: actions/checkout@v2 # This is actually a repo
+        - name: Send a discord message
+          uses: discord-actions/message@v2
+          with: 
+                # A Discord webhook URL
+            webhookUrl: "https://discord.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5"
+            # A message to send to Discord
+            message: "HELLO!!!!!"
+            # A username for the message
+            username: "AVERY"
+            # An avatar for the message
+            avatar: "https://media.tenor.com/4Iq_PQCo6JgAAAAe/foodpanda-paupau.png"
