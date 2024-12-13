@@ -16,6 +16,4 @@ jobs:
                 # A Discord webhook URL
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK_URL }}
             # A message to send to Discord
-            message: "HELLO!!!!!"
-            username: "Pau Pau"
-            avatar: "https://carbonmoves.com/wp-content/uploads/2021/11/Foodpanda-x-Taipei-101-1-1670x1670.png"
+            message: "i am here to talk about your car's extended warranty"
